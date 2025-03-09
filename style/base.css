@@ -505,9 +505,9 @@ body,*,input,textarea
 	/* Color / Background													  */
 	/**************************************************************************/
 		
-	/* body {
+	body {
 		background-color: #47484A;
-	} */
+	}
 
 	.template-footer,
 	.template-component-menu-default>.sf-menu>li ul
