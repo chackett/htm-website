@@ -357,7 +357,6 @@ body,*,input,textarea
 	.template-component-booking .template-component-booking-vehicle-list>li.template-state-selected,
 	.template-component-booking .template-component-booking-package-list>li.template-state-selected>div.template-component-button-box>.template-component-button,
 	.template-component-booking .template-component-booking-service-list>li.template-state-selected>div.template-component-button-box>.template-component-button,
-	.template-component-button:hover,
 	.template-component-gallery .template-component-gallery-filter-list>li>a:hover,
 	.template-component-gallery .template-component-gallery-filter-list>li>a.template-state-selected,
 	.template-component-go-to-top,
@@ -371,7 +370,11 @@ body,*,input,textarea
 	.tparrows.preview1::after,
 	.dtpicker-buttonCont .dtpicker-button:hover
 	{
-		color:#FFFFFF;
+		color:#199CDB; /* CH change from white */
+	}
+	
+	.template-component-button:hover {
+		color:#FFFFFF; /* CH change from 199CDB */
 	}
 	
 	::-moz-selection
@@ -419,14 +422,14 @@ body,*,input,textarea
 	.flexnav .touch-button.template-icon-meta-arrow-large-tb:before,
 	.fancybox-title.fancybox-title-inside-wrap
 	{
-		color:#A8B1B6;
+		color:#000000; /* CH change from A8B1B6*/
 	}
-
+/* 
 	.template-header .template-header-top .template-header-top-icon-list a,
 	.template-header .template-header-top .template-component-menu-default>.sf-menu>li>a
 	{
 		color:rgba(255,255,255,0.85);
-	}
+	} */
 	
 	body,
 	input,
@@ -447,7 +450,7 @@ body,*,input,textarea
 	.dtpicker-overlay .dtpicker-compValue:hover,
 	.dtpicker-buttonCont .dtpicker-button
 	{
-		color:#777777;
+		color:#000000; /* CH change from 777777 */
 	}
 	
 	.template-header .template-header-top.template-header-top-sticky .template-header-top-icon-list a:hover,
@@ -505,14 +508,14 @@ body,*,input,textarea
 	/* Color / Background													  */
 	/**************************************************************************/
 		
-	body {
+	/* body {
 		background-color: #47484A;
-	}
+	} */
 
 	.template-footer,
 	.template-component-menu-default>.sf-menu>li ul
 	{
-		background-color:#222222;
+		background-color: #FFFFFF; /*#222222*/
 	}
 		
 	.template-header .template-header-top.template-header-top-sticky,
@@ -581,6 +584,11 @@ body,*,input,textarea
 		background-color:#F0F0F0;
 	}
 	
+	.template-background-color-white
+	{
+		background-color:#FFFFFF;
+	}
+
 	input
 	{
 		background-color:transparent;
@@ -649,10 +657,10 @@ body,*,input,textarea
 		border-color:#47484A;
 	}
 	
-	.template-header .template-header-top .template-header-top-icon-list .template-icon-meta-menu
+	/* .template-header .template-header-top .template-header-top-icon-list .template-icon-meta-menu
 	{
 		border-color:rgba(255,255,255,0.85);
-	}
+	} */
 	
 	.template-header .template-header-top .template-header-top-icon-list .template-icon-meta-menu:hover
 	{
