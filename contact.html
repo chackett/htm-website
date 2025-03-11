@@ -236,8 +236,8 @@
 							<div class="template-component-space template-component-space-2"></div>
 							
 							<!-- Contact form -->
-							<form name="contact-form" id="contact-form" method="POST" action="#" class="template-component-contact-form">
-
+							<form name="contact-form" id="contact-form" method="POST" action="https://api.web3forms.com/submit" class="template-component-contact-form">
+								<input type="hidden" name="access_key" value="04af0276-d5aa-470d-b7ab-195474d27d48">
 								<!-- Layout 50x50% -->
 								<ul class="template-layout-50x50 template-layout-margin-reset template-clear-fix">
 									
@@ -245,15 +245,15 @@
 									<li class="template-layout-column-left template-margin-bottom-reset">
 										<div class="template-component-form-field template-state-block">
 											<label for="contact-form-name">Your Name</label>
-											<input type="text" name="contact-form-name" id="contact-form-name"/>
+											<input type="text" name="name" id="contact-form-name"/>
 										</div>
 										<div class="template-component-form-field template-state-block">
 											<label for="contact-form-email">Your E-mail</label>
-											<input type="text" name="contact-form-email" id="contact-form-email"/>
+											<input type="text" name="email" id="contact-form-email"/>
 										</div>
 										<div class="template-component-form-field template-state-block">
 											<label for="contact-form-phone">Phone Number</label>
-											<input type="text" name="contact-form-phone" id="contact-form-phone"/>
+											<input type="text" name="phone" id="contact-form-phone"/>
 										</div>
 									</li>
 									
@@ -261,11 +261,17 @@
 									<li class="template-layout-column-right template-margin-bottom-reset">
 										<div class="template-component-form-field template-state-block">
 											<label for="contact-form-message">Message *</label>
-											<textarea rows="1" cols="1" name="contact-form-message" id="contact-form-message"></textarea>
+											<textarea rows="1" cols="1" name="message" id="contact-form-message"></textarea>
 										</div>
 									</li>
 									
 								</ul>
+
+								<!-- Honeypot Spam Protection -->
+								<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+								<!-- Custom Confirmation / Success Page -->
+								<!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
 
 								<!-- Button -->
 								<div class="template-align-center template-clear-fix template-margin-top-1">
